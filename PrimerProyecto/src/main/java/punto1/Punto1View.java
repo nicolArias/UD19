@@ -10,7 +10,11 @@ import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 
+import java.awt.Font;
+
 public class Punto1View extends JFrame{
+	private static final long serialVersionUID = 1L;
+	
 	//Atributos
 	private JPanel cPanel;
 	private JLabel mensaje;
@@ -26,7 +30,7 @@ public class Punto1View extends JFrame{
 		setVisible(true);
 		/*Coordenadas x y de la aplicación y su altura y longitud,
 		 * si no lo indicamos aparecera una ventana muy pequeña*/
-		setBounds(400,200,351,300);
+		setBounds(400,200,351,220);
 		
 		/*Indica que cuando se cierre la ventana se acaba la aplicacion, si no 
 		 * lo indicamos cuando cerramos la ventana, la aplicacion seguira funcionando*/
@@ -36,20 +40,21 @@ public class Punto1View extends JFrame{
 		
 		cPanel=new JPanel();
 		
-		//Indicar diseño 
-		cPanel.setLayout(null);
-		
 		//Asignar el panel a la ventana
 		setContentPane(cPanel);
+		cPanel.setLayout(null);
 		
 		mensaje=new JLabel("Escribe un nombre para saludar");
+		mensaje.setFont(new Font("Tahoma", Font.PLAIN, 13));
+		mensaje.setBounds(105, 54, 151, 14);
 		cPanel.add(mensaje);
 		txtNom=new JTextField();
-		txtNom.setBounds(62,92,230,30);
+		txtNom.setFont(new Font("Tahoma", Font.PLAIN, 14));
+		txtNom.setBounds(71, 77, 199, 23);
 		cPanel.add(txtNom);
 		
 		btnSaludar=new JButton("¡Saludar!");
-		btnSaludar.setBounds(142, 146, 89, 23);
+		btnSaludar.setBounds(126, 120, 97, 31);
 		cPanel.add(btnSaludar);
 		
 		saludar();
