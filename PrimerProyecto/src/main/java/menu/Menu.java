@@ -13,8 +13,10 @@ import javax.swing.JPanel;
 import punto1.Punto1View;
 import punto2.Punto2View;
 import punto3.Punto3View;
+import punto4.Punto4View;
+import java.awt.FlowLayout;
 
-
+/*Autor: Nicol Arias*/
 public class Menu extends JFrame{
 	
 	private static final long serialVersionUID = 1L;
@@ -48,10 +50,10 @@ public class Menu extends JFrame{
 		cPanel.setLayout(null);
 		
 		mensaje=new JLabel("Ingrese el número de la actividad que quiere ejecutar:");
-		mensaje.setBounds(44, 45, 260, 14);
+		mensaje.setBounds(32, 56, 260, 14);
 		cPanel.add(mensaje);
 		opciones=new JComboBox<>();
-		opciones.setBounds(117, 82, 146, 20);
+		opciones.setBounds(82, 95, 182, 23);
 		cPanel.add(opciones);
 		opciones.addItem("Punto 1");
 		opciones.addItem("Punto 2");
@@ -59,7 +61,7 @@ public class Menu extends JFrame{
 		opciones.addItem("Punto 4");
 		
 		btnEnviar=new JButton("Enviar");
-		btnEnviar.setBounds(141, 154, 93, 23);
+		btnEnviar.setBounds(116, 206, 96, 23);
 		cPanel.add(btnEnviar);
 		
 		Enviar();
@@ -83,7 +85,7 @@ public class Menu extends JFrame{
 					Punto3View p3=new Punto3View();
 					break;
 				case ("Punto 4"):
-					//Punto4View p4=new Punto4View();
+					Punto4View p4=new Punto4View();
 					break;
 				}
 			}

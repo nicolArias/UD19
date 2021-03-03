@@ -11,7 +11,7 @@ import javax.swing.JPanel;
 import javax.swing.JTextField;
 
 import java.awt.Font;
-
+/*Autor: Nicol Arias*/
 public class Punto1View extends JFrame{
 	private static final long serialVersionUID = 1L;
 	

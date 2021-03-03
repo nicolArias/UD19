@@ -15,7 +15,7 @@ import java.awt.FlowLayout;
 import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-
+/*Autor: Nicol Arias*/
 public class Punto3View  extends JFrame{
 	private static final long serialVersionUID = 1L;
 	

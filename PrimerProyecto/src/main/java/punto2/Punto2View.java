@@ -11,7 +11,7 @@ import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 import java.awt.FlowLayout;
-
+/*Autor: Nicol Arias*/
 public class Punto2View extends JFrame{
 	//Atributos
 	private JPanel cPanel;
